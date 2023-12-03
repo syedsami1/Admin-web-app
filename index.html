@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Optional: Link to Google Fonts and Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div id="admin-dashboard">
+        <!-- Search Bar -->
+        <input type="text" id="searchBar" placeholder="Enter a value to search...">
+
+        <!-- Table -->
+        <table id="admin-table">
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="row-container">
+                <!-- Table rows will be populated by JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Pagination -->
+        <div id="pagination">
+            <button id="first">First</button>
+            <button id="prev">&lt;</button>
+            <span id="page-indicator">Page 1</span>
+            <button id="next">&gt;</button>
+            <button id="last">Last</button>
+        </div>
+    </div>
+    <div id="search-container">
+        <input type="text" id="searchBar" placeholder="Enter a value to search...">
+        <button id="searchButton" class="search-icon"><i class="fas fa-search"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
